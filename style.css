@@ -1,0 +1,198 @@
+body{
+  background: #009fff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #009fff, #ec2f4b); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #009fff, #ec2f4b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.img{ 
+  margin-top: 100px;
+  height: 400px; 
+  width: 400px; 
+  } 
+  h1{ 
+  color: rebeccapurple ; 
+  margin-top: 20px; 
+  font-family: Comic Sans MS, cursive, sans-serif; 
+  text-transform: uppercase;
+  text-align: center;
+  } 
+  .button{ 
+  margin-left: 45%; 
+  } 
+  .birthday{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 100px;
+    color: rebeccapurple;
+  }
+  span{
+    color: #00d2ff;
+  }
+
+  canvas {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  .title{
+     text-align: center;
+
+  }
+
+  .last-words{
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: lightSpeedInRight; 
+      animation-duration: 3s; 
+      --animate-delay: 0.10s;
+  }
+
+  .column {
+    margin-top: 217px;
+    float: left;
+    width: 25%;
+    padding: 5px;
+    margin-left: 60px;
+    
+  
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+   
+  }
+
+  .shadow{
+    border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px black;
+  }
+
+  .shadow:hover{
+    border: 3px solid;
+  padding: 15px;
+  box-shadow: 7px 15px black;
+  }
+
+  .name{
+    text-align: center;
+  }
+  #hr{
+
+  border: dotted rebeccapurple 10px;
+  margin: auto !important;
+  display: block !important;
+  width: 50%;
+
+  }
+  .clear{
+    height: 30px;
+    clear: both;
+
+  }
+  #j-image{
+    border-radius: 50%;
+    border: solid black 3px;
+    
+  
+  }
+  #col-md-3{
+display: inline-block;
+  }
+  #j-image:hover{
+    border: solid black 5px;
+    animation: shake 0.5s;
+   
+    
+  
+  }
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+  #k-image{
+    border-radius: 50%;
+    border: solid black 3px;
+   
+  }
+
+  #k-image:hover{
+    animation: shake 0.12s;
+  }
+
+  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+ 
+ 
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+#move{
+  margin-top: 220px;
+}
+
+.container{
+  display: flex;
+  margin-bottom: 40px;
+
+}
